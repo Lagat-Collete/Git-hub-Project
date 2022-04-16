@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # GitHub
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.1.
@@ -25,3 +26,7 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+=======
+# Git-hub-Project
+A website where users may enter a GitHub username into a form, submit it, and see names and descriptions of that person's public repositories. A person can also look for repositories
+>>>>>>> bde741b76f381b313577bf066c77145c6d068b46
