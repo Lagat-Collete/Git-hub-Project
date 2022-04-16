@@ -1,0 +1,19 @@
+<div class="container">
+  <h1>{{user.name}}</h1>
+  <img src="{{user.avatar_url}}" alt="" >
+  <br>
+  <br>
+  <p>Public Repos: {{user.public_repos}}</p>
+</div>
+
+<div>
+<div class="card" style="width: 18rem;" *ngFor="let repo of userRepos">
+  <div class="card-body">
+    <h2 class="card-title">{{repo.name}}</h2>
+
+    <p class="card-text">{{repo.description}}></p>
+    <a href="{{repo.html_url}}" class="card-link">Home-page</a>
+    <a href="{{repo.homepage}}" class="card-link">Link-to-project</a>
+  </div>
+</div>
+</div>
