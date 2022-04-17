@@ -1,15 +1,14 @@
-
-
 import { Component, OnInit } from '@angular/core';
 import { UsersService } from '../users.service';
-
 @Component({
-  selector: 'app-gh-user',
-  templateUrl: './gh-user.component.html',
-  styleUrls: ['./gh-user.component.css']
+  selector: 'app-user',
+  templateUrl: './user.component.html',
+  styleUrls: ['./user.component.css'],
+
 })
 
-export class GhUserComponent implements OnInit {
+
+  export class UserComponent implements OnInit{
 user:any;
 repos:any;
 username:any;
@@ -17,15 +16,15 @@ username:any;
 
   constructor(private _usersService: UsersService) { 
     this.user = false
-    this._usersService.getUser().subscribe((user: any) =>{
-      this.user = user;
-      console.log(user);
-    });
+    // this._usersService.getUser().subscribe((user: any) =>{
+    //   this.user = user;
+    //   console.log(user);
+    // });
 
-    this._usersService.getRepos().subscribe((repos) =>{
-      this.repos = repos;
+    // this._usersService.getRepos().subscribe((repos) =>{
+    //   this.repos = repos;
       
-    });
+    // });
 
   }
   search(){
@@ -49,4 +48,3 @@ username:any;
   }
 
 }
-
