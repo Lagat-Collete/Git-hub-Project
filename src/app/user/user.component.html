@@ -28,8 +28,9 @@
         <div class="col-md-8">
           <div class="stats">
             <span class="btn btn-primary">{{user.public_repos}} Public Repos</span>
-            <!-- <span class="btn btn-info">{{}} Followers</span>
-            <span class="btn btn-warning">{{user.following}} Following</span> -->
+            <span class="btn btn-success">{{user.followers}} Followers</span>
+            <span class="btn btn-info">{{user.following}} Following</span>
+
           </div>
           <br>
           <div class="list-group">
@@ -51,6 +52,10 @@
 <div class="card p-3 m-2">
   <h4><a href="{{repo.html_url}}" target="_blank">{{repo.name}}</a></h4>
               <p>{{repo.description}}</p>
+
+<span class="btn btn-success">{{user.followers}} Followers</span>
+            <span class="btn btn-primary">{{user.following}} Following</span>
+
 </div>
 </div>
 </div>
