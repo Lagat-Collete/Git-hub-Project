@@ -1,3 +1,28 @@
 /* form{
   position: fixed;
 } */
+
+input{
+  height: 30px;
+  background-color: #F6F8FA;
+}
+label{
+  color: black;
+  font-size: 20px;
+  font-weight: 900;
+}
+.card{
+  border-radius: 20px;
+  border: outset;
+  box-shadow: 2px 2px #4BA5FB;
+  
+  background-color: #36ACBF;
+  font-size: 18px;
+  font-weight: 600;
+}
+p{
+  font-style: italic;
+}
+.card:hover{
+  background-color: #8A5398;
+}
