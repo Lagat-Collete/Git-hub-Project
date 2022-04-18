@@ -8,13 +8,15 @@ import { UserComponent } from './user/user.component';
 import { UsersService } from './users.service';
 import { FormsModule } from '@angular/forms';
 import { DateCountPipe } from './date-count.pipe';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     GhUserComponent,
     UserComponent,
-    DateCountPipe
+    DateCountPipe,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
