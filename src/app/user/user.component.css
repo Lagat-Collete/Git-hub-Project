@@ -15,14 +15,20 @@ label{
   border-radius: 20px;
   border: outset;
   box-shadow: 2px 2px #4BA5FB;
-  
+  width: 220px;
+  height: 220px;
   background-color: #36ACBF;
   font-size: 18px;
   font-weight: 600;
+  overflow-y: scroll;
 }
 p{
   font-style: italic;
 }
 .card:hover{
   background-color: #8A5398;
+}
+img{
+  
+  border-radius: 50%
 }
