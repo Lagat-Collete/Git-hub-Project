@@ -1,14 +1,15 @@
 
 
 
-<div class="row">
-  <div class="col-md-12">
-    <form>
+<div class="row sticky-top">
+  <div class="col-md-12 col-md-offset-4">
+    <form  #userForm="ngForm">
       <div class="form-group">
         <label for="username">Enter your Username</label>
         <br>
-        <input type="text" class="form-control" placeholder="GitHub Username" id="name" [(ngModel)]="username" name="name" (keyup.enter)="search()">
+        <input type="text" class="form-control" placeholder="GitHub Username" id="name" [(ngModel)]="username" name="name" #name="ngModel"required (keyup)="search()">
       </div>
+
     </form>
   </div>
 </div>
@@ -43,9 +44,9 @@
     </div>
   </div>
 </div>
-<div class="panel panel-default">
+<!-- <div class="panel panel-default">
   <div class="panel-heading">
-
+<p>{{user.name}}'s Repos</p>
   </div>
   <div class="panel-body">
     <div class="row">
@@ -68,4 +69,15 @@
     </div>
   </div>
 
+</div> -->
+
+
+<div class="container">
+  <h3 style="text-align: center; color:#265A88;">{{user.name}}'s Repos</h3>
+<div class="col-md-4 mt-3 d-inline-block"  *ngFor="let repo of repos">
+<div class="card p-3 m-2">
+  <h4><a href="{{repo.html_url}}" target="_blank">{{repo.name}}</a></h4>
+              <p>{{repo.description}}</p>
+</div>
+</div>
 </div>
