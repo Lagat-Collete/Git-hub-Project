@@ -1,9 +1,9 @@
 .foot {
-  padding: 20px;
+  height:150px ;
+  padding: 5px;
   text-align: center;
-  word-spacing: 10px;
-  letter-spacing: 3px;
-  height: 70px;
+font-weight: 600;
+  color: white;
   background-color: #2d2d2d;
 }
 .footer {

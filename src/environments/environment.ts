@@ -4,7 +4,6 @@
 
 export const environment = {
   production: false,
-  github:'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'
 };
 
 /*
